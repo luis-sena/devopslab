@@ -59,7 +59,7 @@ jobs:
       deploy:
         provider: gae
         keyfile: ../gcp-key.json
-        project: projeto01gaby
+        project: lab-devops-cloud-lsena
         on:
           branch: main
 
