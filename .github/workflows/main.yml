@@ -24,7 +24,8 @@ jobs:
         run: |
           pip install flask flask-wtf pytest coverage
 
-      - name: Unit Test, Quality & Security 
+      - name: Unit Test, Quality & Security
+        uses: sonarsource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -32,8 +33,6 @@ jobs:
           coverage run -m pytest test.py
           coverage report app.py
           coverage xml app.py
-          sonar-scanner
-
 
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
