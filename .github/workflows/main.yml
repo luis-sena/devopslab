@@ -22,8 +22,8 @@ jobs:
 
       - name: Instalação de Módulos que são necessários para a Aplicação
         run: |
-          pip install flask
+          pip install flask flask-wtf pytest
 
       - name: Test
         run: |
-          python -m unittest -v test
+          python -m pytest test.py
