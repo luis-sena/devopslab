@@ -1,3 +1,4 @@
+[![GitHub Actions](https://github.com/luis-sena/devopslab/actions/workflows/main.yml/badge.svg)](https://github.com/luis-sena/devopslab/actions/workflows/main.yml)
 [![Build Status](https://app.travis-ci.com/luis-sena/devopslab.svg?branch=main)](https://app.travis-ci.com/luis-sena/devopslab)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=luis-sena-devopslab&metric=alert_status)](https://sonarcloud.io/dashboard?id=luis-sena-devopslab)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=luis-sena-devopslab&metric=bugs)](https://sonarcloud.io/dashboard?id=luis-sena-devopslab)
