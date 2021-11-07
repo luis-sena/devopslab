@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  cicd:
+  cicd
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,4 +26,4 @@ jobs:
 
       - name: Test
         run: |
-          python -m unittest -v test
+          python -m pytest test.py
