@@ -24,7 +24,13 @@ jobs:
         run: |
           pip install flask flask-wtf pytest coverage
 
-      - name: Unit Test, Quality & Security
+      - name: Unit Test
+        run: |
+          coverage run -m pytest test.py
+          coverage report app.py
+          coverage xml app.py
+
+      - name: Quality & Security
         uses: sonarsource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
